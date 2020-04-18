@@ -1,0 +1,23 @@
+.IntroContainer {
+  margin: 4rem 6rem;
+  width: 600px;
+}
+.Title {
+  padding-bottom: 2rem;
+}
+.IntroText {
+  font-size: 18px;
+  line-height: 1.9;
+}
+@media (max-width: 700px) {
+  .IntroContainer {
+    margin: 4rem 6rem;
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .IntroContainer {
+    margin: 4rem 4rem;
+    width: 80%;
+  }
+}

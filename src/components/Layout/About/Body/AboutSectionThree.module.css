@@ -1,0 +1,96 @@
+.AboutSection {
+  min-height: 100vh;
+}
+
+.AboutContainer {
+  padding: 10rem;
+  margin: 0 5%;
+}
+.Number {
+  display: flex;
+}
+.AboutNumber {
+  font-size: 8rem;
+  color: var(--third-color);
+}
+.NumberLine {
+  height: 4px;
+  width: 70px;
+  left: 100%;
+  background-color: var(--third-color);
+  position: relative;
+  top: -50%;
+}
+.BodyTitle {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 0.5;
+  margin-bottom: 3rem;
+}
+.BodyText {
+  font-size: 2rem;
+}
+@media (max-width: 900px) {
+  .AboutContainer {
+    padding: 8rem;
+  }
+  .AboutNumber {
+    font-size: 6rem;
+  }
+  .NumberLine {
+    height: 4px;
+    width: 70px;
+    left: 100%;
+    position: relative;
+    top: -50%;
+  }
+  .BodyTitle {
+    font-size: 5rem;
+  }
+  .BodyText {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 720px) {
+  .AboutContainer {
+    padding: 6rem;
+  }
+  .AboutNumber {
+    font-size: 5rem;
+  }
+  .NumberLine {
+    height: 4px;
+    width: 50px;
+    left: 100%;
+    position: relative;
+    top: -50%;
+  }
+  .BodyTitle {
+    font-size: 4rem;
+  }
+  .BodyText {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 550px) {
+  .AboutContainer {
+    padding: 6rem 4rem;
+    margin: 0;
+  }
+  .AboutNumber {
+    font-size: 4rem;
+  }
+  .NumberLine {
+    height: 4px;
+    width: 40px;
+    left: 100%;
+    position: relative;
+    top: -50%;
+  }
+  .BodyTitle {
+    font-size: 3rem;
+  }
+  .BodyText {
+    font-size: 1.7rem;
+  }
+}

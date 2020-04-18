@@ -1,0 +1,133 @@
+.InputContainer {
+  margin: 2rem 6rem 6rem 6rem;
+  display: flex;
+}
+.InputTitle {
+  font-size: 1.5rem;
+  padding-bottom: 4rem;
+}
+.ActivityDiv {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.Activity {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 3px solid black;
+  padding-bottom: 3px;
+  outline: none;
+}
+.Time {
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 3px solid black;
+  padding-bottom: 3px;
+  outline: none;
+  margin-left: 4rem;
+}
+.BtnInputSubmit {
+  display: block;
+  padding: 0.8rem 2.5rem;
+  background: transparent;
+  border: 3px solid var(--secondary-color);
+  outline: none;
+  font-size: 18px;
+  box-shadow: inset 0px 0px 0px var(--secondary-color);
+  transition: 0.4s all;
+}
+.BtnInputSubmit:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: var(--secondary-color);
+  box-shadow: inset 140px 0px 0px var(--secondary-color);
+  color: #fff;
+}
+.InputFormSection {
+  flex: 35%;
+}
+.OutputFormSection {
+  padding: 0 0 0 15%;
+  flex: 65%;
+}
+.MyActivities {
+  font-size: 24px;
+  padding: 0px 10px;
+  width: 90%;
+  color: #333;
+  font-weight: bold;
+}
+.RemoveActivity {
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--fifth-color);
+  padding: 10px 10px;
+  color: grey;
+}
+.ActivityList li {
+  font-size: 17px;
+  width: 90%;
+  padding: 10px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.ActivityList li:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .ActivityDiv {
+    height: 100px;
+    display: block;
+    align-items: center;
+  }
+  .Activity {
+    margin-bottom: 2rem;
+    display: block;
+  }
+  .ListActivity {
+    max-width: 100px;
+  }
+  .Time {
+    width: 250px;
+    margin-left: 0;
+  }
+  .BtnInputSubmit {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .OutputFormSection {
+    padding: 0 0 0 15%;
+    flex: 75%;
+  }
+  .InputContainer {
+    margin: 2rem 2rem 6rem 6rem;
+    display: flex;
+  }
+  .RemoveActivity {
+    width: 260px;
+  }
+}
+@media (max-width: 700px) {
+  .InputContainer {
+    margin: 2rem 6rem 6rem 6rem;
+    display: block;
+  }
+  .OutputFormSection {
+    padding: 0;
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .InputContainer {
+    margin: 2rem 4rem 6rem 4rem;
+    display: block;
+  }
+}

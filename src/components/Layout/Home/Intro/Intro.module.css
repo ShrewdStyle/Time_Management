@@ -1,0 +1,166 @@
+.IntroContainer {
+  height: 100vh;
+}
+
+.BtnMain {
+  display: block;
+  background: transparent;
+  border: 7px solid var(--secondary-color);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: inset 0px 0px 0px var(--secondary-color);
+  transition: 0.4s all;
+}
+.BtnMain:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  box-shadow: inset 0px -100px 0px var(--secondary-color);
+}
+
+.Intro {
+  height: 600px;
+  overflow: hidden;
+}
+
+.IntroGroup {
+  display: inline-block;
+  padding-top: 15%;
+  display: relative;
+  width: 40%;
+}
+
+.Title {
+  color: #fff;
+  font-size: 3rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.Pie {
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  width: 500px;
+  z-index: 5;
+  animation: rotate 50s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#Stat1 {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn 5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+#Stat2 {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn 5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+#Stat3 {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 65%;
+  right: 48%;
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn 5s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1150px) {
+  .Pie {
+    width: 300px;
+    top: 15%;
+    left: 55%;
+  }
+  .IntroGroup {
+    padding-left: 10%;
+    width: 45%;
+  }
+  #Stat1 {
+    top: 10%;
+    right: 15%;
+  }
+  #Stat2 {
+    top: 53%;
+    right: 10%;
+  }
+  #Stat3 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .Pie {
+    display: none;
+  }
+  .IntroGroup {
+    padding-left: 10%;
+    width: 70%;
+  }
+  .Title {
+    font-size: 3.5rem;
+  }
+  #Stat1 {
+    display: none;
+  }
+  #Stat2 {
+    display: none;
+  }
+}
+
+@media (max-width: 825px), (max-height: 380px) {
+  .IntroContainer {
+    height: 650px;
+  }
+}
+
+@media (max-width: 450px) {
+  .IntroGroup {
+    padding-left: 10%;
+    width: 85%;
+  }
+  .Title {
+    font-size: 2.5rem;
+  }
+  .BtnMain {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+  .Title {
+    margin-bottom: 4rem;
+  }
+}

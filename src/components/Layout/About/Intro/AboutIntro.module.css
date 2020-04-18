@@ -1,0 +1,78 @@
+.AboutIntro {
+  height: 100vh;
+  width: 100%;
+}
+.AboutImg {
+  width: 800px;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  z-index: 3;
+}
+.AnimText {
+  z-index: 10;
+}
+.AboutIntroContainer {
+  padding: 2rem 6rem 16rem 6rem;
+  margin: 0 0 0 10%;
+  height: 100vh;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.IntroHeader {
+  font-size: 6rem;
+  font-weight: bolder;
+  color: #fff;
+  z-index: 5;
+}
+.IntroText {
+  color: #fff;
+}
+
+@media (max-width: 770px) {
+  .AboutIntroContainer {
+    margin: 0;
+  }
+  .IntroHeader {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 660px) {
+  .IntroHeader {
+    font-size: 4rem;
+  }
+  .AboutIntroContainer {
+    padding: 2rem 4rem 16rem 4rem;
+  }
+}
+@media (max-width: 575px) {
+  .IntroHeader {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 420px) {
+  .AboutIntroContainer {
+    padding: 2rem 2rem 16rem 2rem;
+    margin: 0;
+  }
+}
+@media (max-height: 600px) {
+  .IntroHeader {
+    font-size: 4rem;
+  }
+}
+@media (max-height: 480px) {
+  .AboutIntroContainer {
+    padding: 2rem 6rem 10rem 6rem;
+  }
+}
+@media (max-height: 400px) {
+  .AboutIntroContainer {
+    padding: 2rem 6rem 6rem 6rem;
+  }
+  .IntroHeader {
+    font-size: 3.5rem;
+  }
+}

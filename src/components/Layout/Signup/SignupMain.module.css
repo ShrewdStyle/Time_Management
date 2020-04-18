@@ -1,0 +1,123 @@
+.SignupContainer {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 14rem;
+  min-width: 100%;
+}
+.SignupHeader {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.SignupBody {
+  font-size: 1.4rem;
+  padding: 4rem 8rem;
+  margin-bottom: 2rem;
+  color: #666;
+  text-align: start;
+  margin: 0 auto;
+}
+.SignupEmail {
+  border: none;
+  border-bottom: 3px solid black;
+  margin-right: 2rem;
+  font-size: 1.6rem;
+  padding-bottom: 0.4rem;
+  outline: none;
+  min-width: 330px;
+}
+.SignupEmail::placeholder {
+  color: lightgray;
+}
+.BtnSignup {
+  background: transparent;
+  border: 7px solid var(--sixth-color);
+  color: black;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: inset 0px 0px 0px var(--sixth-color);
+  transition: 0.4s all;
+}
+.BtnSignup:hover {
+  background-color: var(--sixth-color);
+  color: #fff;
+  box-shadow: inset 0px -100px 0px var(--sixth-color);
+}
+@media (max-width: 1025px) {
+  .BtnSignup {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 770px) {
+  .BtnSignup {
+    display: block;
+    margin: 3rem auto;
+  }
+}
+@media (max-width: 650px) {
+  .SignupContainer {
+    padding-bottom: 10rem;
+  }
+  .SignupBody {
+    font-size: 1.4rem;
+    padding: 4rem 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .SignupContainer {
+    padding-bottom: 4rem;
+    height: 100vh;
+  }
+  .SignupBody {
+    font-size: 1.4rem;
+    padding: 4rem 4rem;
+  }
+  .SignupEmail {
+    min-width: 200px;
+  }
+}
+@media (max-width: 420px) {
+  .SignupHeader {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .SignupContainer {
+    padding-bottom: 8rem;
+  }
+  .SignupBody {
+    font-size: 1.4rem;
+    padding: 4rem 4rem;
+  }
+  .SignupEmail {
+    width: 250px;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 380px) {
+  .SignupContainer {
+    padding-bottom: 3rem;
+  }
+  .SignupHeader {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+  .SignupContainer {
+    padding-bottom: 1rem;
+    height: 750px;
+  }
+  .SignupBody {
+    font-size: 1.4rem;
+    padding: 4rem 3rem;
+  }
+  .SignupEmail {
+    margin-left: 1.5rem;
+    width: 220px;
+    font-size: 1.1rem;
+  }
+}

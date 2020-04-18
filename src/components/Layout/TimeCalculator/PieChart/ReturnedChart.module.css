@@ -1,0 +1,92 @@
+.PieChartContainer {
+  margin: 2rem 6rem 6rem 6rem;
+}
+.PieHeader {
+  font-size: 1.7rem;
+}
+
+.ReturnedChartContainer {
+  margin: 5rem 6rem 6rem 0rem;
+  display: flex;
+}
+
+.PieChartGraph {
+  flex: 50%;
+  height: 700px;
+}
+.HoursLeft {
+  min-width: 30%;
+  flex: 50%;
+  margin: 3rem 10% 0 0;
+}
+.RemainingTime {
+  font-size: 22px;
+}
+.RemainingTime span {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+@media (max-width: 1370px) {
+  .PieChartContainer {
+    margin: 2rem 4rem 6rem 4rem;
+  }
+}
+@media (max-width: 800px) {
+  .HoursLeft {
+    min-width: 30%;
+    flex: 50%;
+    margin: 3rem 0 0 0;
+  }
+  .PieChartGraph {
+    flex: 50%;
+    height: 570px;
+  }
+  .ReturnedChartContainer {
+    margin: 5rem 6rem 8rem 0rem;
+    display: block;
+  }
+  .RemainingTime {
+    text-align: center;
+  }
+  .ReturnedChartContainer {
+    margin: 0;
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .PieChartGraph {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .ReturnedChartContainer {
+    margin: 0;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .PieChartContainer {
+    margin: 2rem 2rem 6rem 2rem;
+  }
+  .PieChartGraph {
+    flex: 50%;
+    height: 550px;
+  }
+  .PieHeader {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 431px) {
+  .PieChartContainer {
+    margin: 2rem 0rem 6rem 0rem;
+  }
+  .PieHeader {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    padding: 0 1rem;
+  }
+}

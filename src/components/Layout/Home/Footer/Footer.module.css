@@ -1,0 +1,183 @@
+.FooterBody {
+  height: 400px;
+  display: flex;
+}
+.FooterJoin {
+  background-color: var(--primary-color);
+  height: 200px;
+  flex: 35%;
+  padding: 3rem 4rem;
+  height: 100%;
+}
+.FooterHeader {
+  padding-bottom: 40px;
+}
+.FooterHeader span {
+  color: var(--primary-color);
+}
+.FooterMainLeft {
+  display: flex;
+}
+.FooterText {
+  flex: 30%;
+  background-color: black;
+}
+.FooterUnderline {
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  outline: none;
+  color: #ccc;
+  margin-bottom: 2rem;
+  padding-bottom: 0.2rem;
+}
+.FooterUnderline:first-child {
+  margin-top: 4rem;
+}
+.FooterMain {
+  flex: 35%;
+  background-color: black;
+  padding: 3rem 4rem;
+  color: #fff;
+}
+.SocialMediaHeader {
+  font-size: 1.7rem;
+  padding-bottom: 20px;
+}
+.FooterSocialMedia {
+  padding-bottom: 25px;
+  display: flex;
+}
+
+.SocialDiv {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #fff;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  transition: 0.7s background-color;
+}
+.SocialDiv a {
+  color: #fff;
+}
+.SocialDiv a:hover {
+  color: #fff;
+}
+.SocialDiv:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+}
+
+.FooterFrom {
+  padding-top: 55px;
+  color: #ccc;
+  font-size: 14px;
+}
+.FooterFrom span {
+  color: var(--primary-color);
+}
+
+.JoinTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.JoinText {
+  padding: 20px 0 80px 0;
+  font-size: 1.2rem;
+}
+.SignUpBtn {
+  display: block;
+  background: transparent;
+  border: 3px solid var(--fifth-color);
+  color: #333;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: inset 0px 0px 0px var(--fifth-color);
+  transition: 0.4s all;
+}
+.SignUpBtn:hover {
+  background-color: var(--fifth-color);
+  color: #fff;
+  box-shadow: inset 0px -100px 0px var(--fifth-color);
+}
+
+@media (max-width: 1400px) {
+  .FooterJoin {
+    flex: 24%;
+  }
+  .FooterUnderline {
+    width: 70%;
+    padding-bottom: 0.2rem;
+  }
+  .FooterText {
+    flex: 35%;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 1105px) {
+  .FooterText {
+    display: none;
+  }
+  .FooterJoin {
+    flex: 24%;
+  }
+  .FooterMain {
+    flex: 60%;
+    background-color: black;
+    padding: 3rem 4rem 3rem 8rem;
+    color: #fff;
+  }
+}
+@media (max-width: 815px) {
+  .FooterJoin {
+    flex: 34%;
+  }
+  .FooterMain {
+    flex: 60%;
+    background-color: black;
+    padding: 3rem 4rem 3rem 4rem;
+    color: #fff;
+  }
+}
+@media (max-width: 730px) {
+  .FooterJoin {
+    height: 400px;
+    padding: 3rem 2rem;
+  }
+  .FooterMain {
+    height: 400px;
+  }
+}
+@media (max-width: 667px) {
+  .FooterBody {
+    display: block;
+  }
+  .FooterJoin {
+    flex: 34%;
+    height: 320px;
+    padding: 3rem 4rem;
+  }
+  .JoinText {
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+  .FooterMain {
+    height: 380px;
+    padding: 3rem 1em 1rem 3em;
+    color: #fff;
+  }
+  .FooterFrom {
+    padding: 25px 0;
+    color: #ccc;
+    font-size: 14px;
+  }
+}
